@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100&display=swap");
 
 :root {
-  --main-color: #419973;
+  --main-color: #7fe084;
   --black-color: #0e0e0e;
   --border: 0.1rem solid rgba(255, 255, 255, 0.4);
 }
@@ -25,7 +25,25 @@ html {
 }
 body {
   background-color: var(--main-color);
-  height: 200vh;
+
+}
+section{
+    padding:3.5rem 7% ;
+
+}
+.btn {
+  margin-top: 1rem ;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--black-color);
+  cursor: pointer;
+
+}
+.btn:hover{
+  opacity:0.9;
 }
 
 /*! header start */
@@ -62,8 +80,51 @@ body {
   background-color: transparent;
 }
 /*! header end */
+/*! home section start */
 .home{
     min-height: 100vh;
+    background:url(../images/egehanbey.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
     display:flex;
+    align-items: center;
 }
-/*! home section start */
+
+
+.home .content {
+  max-width: 60rem;
+
+}
+.home .content h3 {
+  font-size: 6rem;
+  color: #fff;
+}
+.home .content p{
+  font-size: 2rem;
+  font-weight: 300 ;
+  line-height: 1.8;
+  padding: 1rem 0 ;
+  color: #ccc;
+}
+/*! home section end */
+
+/*! ozgecmis section start */
+.ozgecmis {
+  min-height: 100vh;
+  display:flex;
+
+}
+.ozgecmis .content {
+  max-width: 60rem;
+}
+.ozgecmis p{
+  font-size: 2rem;
+  font-weight: 300 ;
+  line-height: 1.8;
+  padding: 1rem 0 ;
+  color: #0e0e0e;
+}
+
+
