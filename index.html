@@ -12,6 +12,9 @@
       referrerpolicy="no-referrer"
     />
     <title>Egehan's Web Sites</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
   </head>
   <link rel="stylesheet" href="styles/styles.css" />
   <body>
@@ -33,7 +36,7 @@
         </button>
       </div>
     </header>
-    <!--! header section end -->
+    <!--! header section end -->i
 
     <!--! home section start -->
 
@@ -69,18 +72,18 @@
   <h2>Haberler</h2>
     <div class="news-container">
       <div class="news-card">
-        <h3>Haber Başlığı 1</h3>
-        <p>Haber açıklaması buraya gelebilir.</p>
+        <h3>Yaz Okulu</h3>
+        <p>Bu sene okulumuzda yaz okulu açılıp açılmayacağı henüz kesin değildir.</p>
         <a href="#">Devamını Oku</a>
       </div>
       <div class="news-card">
-        <h3>Haber Başlığı 2</h3>
-        <p>Haber açıklaması buraya gelebilir.</p>
+        <h3>Mezuniyet</h3>
+        <p>Okulumuzun düzenlediği mezuniyet programı 8 Temmuzda olacaktır.</p>
         <a href="#">Devamını Oku</a>
       </div>
       <div class="news-card">
-        <h3>Haber Başlığı 3</h3>
-        <p>Haber açıklaması buraya gelebilir.</p>
+        <h3>Bilgisayar Mühendisliği</h3>
+        <p>Okulumuz bilgisayar mühendisliği bölümü ilk mezunlarını verecektir.</p>
         <a href="#">Devamını Oku</a>
       </div>
     </div>
@@ -91,35 +94,65 @@
 <!--!> galeri section start --> 
 
 <section class="gallery">
+
   <h2>Galeri</h2>
-    <div class="gallery-container">
-      <div class="gallery-item">
-        <img src="images/selam.jpg" alt="Resim 1">
-        <div class="overlay">
-          <div class="overlay-content">
-            <h3>Resim Başlığı 1</h3>
-            <p>Resim açıklaması buraya gelebilir.</p>
-            <a href="#">Daha Fazla</a>
-          </div>
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/selamb.jpg" alt="Resim 2">
-        <div class="overlay">
-          <div class="overlay-content">
-         
-          </div>
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img src="images/selambb.jpg" alt="Resim 3">
-        <div class="overlay">
-          <div class="overlay-content">
-            <h3>Resim Başlığı 3</h3>
-            <p>Resim açıklaması buraya gelebilir.</p>
-            <a href="#">Daha Fazla</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  
+  <div class="img">
+    <a target="_blank" href="images/selam.jpg">
+      <img src="images/selam.jpg" alt="Fjords" width="300" height="200">
+    </a>
+  </div>
+  
+  <div class="img">
+    <a target="_blank" href="images/selamb.jpg">
+      <img src="images/selamb.jpg" alt="Forest" width="300" height="200">
+    </a>
+  </div>
+  
+  <div class="img">
+    <a target="_blank" href="images/selambb.jpg">
+      <img src="images/selambb.jpg" alt="Northern Lights" width="300" height="200">
+    </a>
+  </div>
+  
+  <div class="img">
+    <a target="_blank" href="images/arkaplan.png">
+      <img src="images/arkaplan.png" alt="Mountains" width="300" height="200">
+    </a>
+  </div>
+
+</section>
+<!--!> galeri section end --> 
+
+<!--!> iletisim section start -->
+
+<section class="iletisim">
+  
+  <h2>İletişim</h2>
+
+  <form action="mail.php" method="POST">
+    <label for="name">Adınız:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="message">Mesajınız:</label>
+    <textarea id="message" name="message" required></textarea><br><br>
+    
+    <input type="submit" value="Gönder">
+  </form>
+</section>
+<!--!> iletisim section end -->
+
+<!--!> maps section start -->
+
+<section class="maps">
+
+  <h1>Harita Örneği</h1>
+  <div id="map"></div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script src="ITP/script.js"></script>
+  
 </section>
